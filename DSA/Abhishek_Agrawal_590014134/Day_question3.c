@@ -24,7 +24,7 @@ void bubbleSort(int arr[], int n) {
 }
 int main()
 {
-  int n;
+  int n,num;
   printf("Enter the number of elements of array");
   scanf("%d",&n);
   int arr[n];
@@ -34,26 +34,31 @@ int main()
   for(int j=0;j<n;j++){
   printf("%d ",arr[j]);}
   bubbleSort(arr, n);
-  printf("Sorted array: ");
+  printf("\nSorted array: ");
   for (int k = 0; k < n; k++)
   {
     printf("%d ", arr[k]);
   }
-  num==arr[0];
-  for(int m=0;m<n;m++){
-    if(num==arr[m]){
-    num=arr[m];
-      if(m==n-1){
-        printf("-1");}
+  printf("\n");
+  num=arr[0];
+  for(int m=0;m<n;m++)
+  {
+    if(num=!arr[m])
+    {
+    printf("The second largest element is %d ",arr[n-2]);
+    break;
     }
-    else{
-      printf("The second largest element is %d ",arr[m-1]);}
-    }
-    
-  
-    
-    
-  
-
+    else
+      {
+        if(m==n-1)
+            {
+            printf("-1");
+                break;
+            }
+                continue;
+        }
   }
+    return 0;
+  }
+
   
